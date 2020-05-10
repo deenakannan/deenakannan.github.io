@@ -13,14 +13,13 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/fancybox.min.css">
-
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/style.css">
     
   </head>
@@ -71,20 +70,23 @@
     </div> -->
     <div class="nav-side-menu">
     <div class="brand">Dinesh Kannan</div>
-    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+    <i class="fa fa-bars fa-4x toggle-btn " data-toggle="collapse" aria-hidden="true" data-target="#menu-content"></i>
   
         <div class="menu-list">
   
             <ul id="menu-content" class="menu-content collapse out">
                 
-                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                <!-- <li data-toggle="collapse" data-target="#service" class="collapsed">
                   <a href="#"><i class="fa fa-globe fa-lg text-center"></i> Gallery <span class="arrow"></span></a>
-                </li>  
+                </li>
                 <ul class="sub-menu collapse" id="service">
-                  <li><a href="#">Nature</a></li>
-                  <li><a href="#">Portrait</a></li>
-                  <li><a href="#">E-Commerce</a></li>
-                  <li><a href="#">Wedding</a></li>
+                
+                  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+                  <button class="btn" onclick="filterSelection('people')"> People</button>
+                  <button class="btn" onclick="filterSelection('product')"> Product</button>
+              
                 </ul>
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
                   <a href="#"><i class="fa fa-globe fa-lg text-center"></i> Contact Me <span class="arrow"></span></a>
@@ -97,150 +99,170 @@
                     <a href="https://www.youtube.com/channel/UCYzJHrdbLDF_A0kTzcUp4WQ"><span class="icon-youtube"></span></a>&emsp;&emsp;&emsp;
                     <a href="https://www.instagram.com/deenakannan"><span class="icon-instagram"></span></a>
                   </li>
+                </ul> -->
+                <ul>
+                <li class="text-center">
+                  <a href="#" >Contact Me</a>
+                </li>  
+                
+                  <li class="text-center"><a href="#">Phone</a> &emsp; +916383132670</li>
+                
+                  <li class="text-center">
+                    <a href="https://www.facebook.com/deena.kannan"><span class="icon-facebook"></span></a>&emsp;&emsp;&emsp;
+                    <a href="https://www.youtube.com/channel/UCYzJHrdbLDF_A0kTzcUp4WQ"><span class="icon-youtube"></span></a>&emsp;&emsp;&emsp;
+                    <a href="https://www.instagram.com/deenakannan"><span class="icon-instagram"></span></a>
+                  </li>
                 </ul>
-     </div>
+                <!-- Start of WebFreeCounter Code -->
+<img src="https://www.webfreecounter.com/hit.php?id=gaadqq&nd=6&style=1"  alt="web counter">
+<!-- End of WebFreeCounter Code -->
+            </ul>
+        </div>
     </div>
   <!-- </header>  -->
 
   <main class="main-content">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Gallery
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+      <!-- <button class="btn" onclick="filterSelection('cars')"> Cars</button> -->
+      <button class="btn" onclick="filterSelection('people')"> People</button>
+      <button class="btn" onclick="filterSelection('product')"> Product</button>
+      </div>
+    </div>
     <div class="container-fluid photos">
       <div class="row align-items-stretch">
-        
-        <div class="col-6 col-md-6 col-lg-8" data-aos="fade-up" id="avd">
-          <a href="images/1.jpg" class="d-block photo-item  img image-popup d-flex justify-content-center">
+        <div class="col-6 col-md-6 col-lg-8 column nature" id="avd">
+          <a href="images/1.jpg" class="d-block photo-item  img image-popup d-flex justify-content-center ">
             <img src="images/1.jpg" alt="Image" class="img-fluid">
-            <!-- <div class="photo-text-more">
-              <div class="photo-text-more">
-              <h3 class="heading">Photos Title Here</h3>
-              <span class="meta">42 Photos</span>
-            </div>
-            </div> -->
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column nature"  >
           <a href="images/2.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/2.jpg" alt="Image" class="img-fluid">
-
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column nature"  >
           <a href="images/3.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/3.jpg" alt="Image" class="img-fluid">
-
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-8" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-8 column nature"  >
           <a href="images/4.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/4.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column people"  >
           <a href="images/5.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/5.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column people" >
           <a href="images/6.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/6.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column people" >
           <a href="images/7.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/7.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/8.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/8.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/9.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/9.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
         
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/10.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/10.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/11.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/11.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/12.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/12.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/13.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/13.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/14.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/14.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/15.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/15.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/16.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/16.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/17.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/17.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/18.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/18.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/19.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/19.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product">
           <a href="images/20.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/20.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product">
           <a href="images/21.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/21.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/22.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/22.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product" >
           <a href="images/23.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/23.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product">
           <a href="images/24.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/24.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product">
           <a href="images/25.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/25.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 column product">
           <a href="images/26.jpg" class="d-block photo-item img image-popup d-flex justify-content-center">
             <img src="images/26.jpg" alt="Image" class="img-fluid">
           </a>
@@ -254,7 +276,7 @@
         <div class="col-md-12 text-center py-5">
           <p>
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is made  <i class="icon-heart" aria-hidden="true"></i> by <a href="https://dineshkannan.com" target="_blank" >Dineshkannan</a>
+        <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is made   by <a href="#" target="_blank" >Dineshkannan</a> -->
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
       </p>
         </div>
@@ -275,9 +297,8 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/aos.js"></script>
-
   <script src="js/jquery.fancybox.min.js"></script>
-
+  <script src="js/gallery.js"></script>
   <script src="js/main.js"></script>
     
   </body>
